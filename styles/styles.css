@@ -1,0 +1,485 @@
+
+
+h1{
+    color: rgba(51, 170, 51, .0) ;
+    -webkit-text-stroke: 1px white; 
+    font-family: sans-serif;
+    font-size: 48px;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: auto ;
+    margin: auto;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+
+/* Top Section of the page code below*/
+.header{
+   background-image: url("Object.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 35px;
+   padding-bottom: 150px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+#nav-bar{
+  float: right;
+  display: flex;
+}
+
+#nav-bar li{
+  padding :10px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#social-bar{
+    display: grid;
+    justify-content: end;
+
+}
+
+#social-bar li{
+    padding-top: 5px;
+}
+
+#social-bar img{
+    transition: 0.3s;
+}
+
+#social-bar img:hover{
+    border: 3px solid white;
+}
+
+#header-content{
+  margin-top: -13%;
+  margin-left: 35px;
+}
+
+#minor_title{
+  font-family: cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size:20px;
+  line-height: 80px;
+  letter-spacing: 3.3333px;
+  text-transform: uppercase;
+}
+
+#major_title{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 57px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+/* Top Section of the page code above */
+
+/* Releases section of the page code below */
+
+.releases{
+ background-image: url('Mask.png');
+ padding-bottom: 30px;
+ padding-left:5%;
+ margin-top: -10px; /* Fix for white space issue*/
+}
+
+.releases h1{
+    margin-left: 35px;
+}
+
+.releases button{
+    margin-top: 25px;
+    grid-area: butto;
+    margin-right: 15px;
+}
+
+.releases_grid{
+    display: grid;
+    grid-template-areas: 'image1 image1 image2 image3'
+                         'image1 image1 image4 image5'
+                         'image6 image6 image6 butto';
+    padding: 5%;
+}
+
+.releases_grid img {
+    margin: 5px;
+}
+
+#image1{
+    grid-area: image1;
+}
+
+#image2{
+    grid-area: image2;
+}
+
+#image3{
+    grid-area: image3;
+}
+
+#image4{
+  grid-area: image4;
+}
+
+#image5{
+    grid-area: image5;
+}
+
+
+/* Releases section of the page code above */
+
+/* Tour Section of the page code below */
+
+.tour {
+    background-color: black;
+    color: white;
+    padding-bottom: 35px;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+.tour h1{
+    margin-left: 35px;
+}
+
+.tour button{
+    float: right;
+    margin-right: 25px;
+}
+
+.tour a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.tour_date{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-family: sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 28px;
+   text-transform: uppercase;
+  
+   
+}
+
+.tour_date h4{
+    font-family: cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.tour_location{
+    font-weight: normal;
+}
+
+
+.tour_grid{
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+
+
+
+/* Tour Section of the page code above */
+
+
+/* Video Section of the page code below*/
+
+.videos{
+  background-image: url('Mask.png');
+  color: white;
+  margin-top: -10px;
+  padding-bottom: 35px;
+  padding-left:5%;
+}
+
+.videos h1{
+    margin-left: 35px;
+}
+
+.videos button{
+    float: right;
+    margin-right: 25px;
+}
+
+.song_name{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.song_artist{
+    font-family: cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: #F6C82A;
+}
+
+/* Video Slide Show below CSS */
+
+.videoslide-container{
+    display: grid;
+    max-width:1000px;
+    margin:auto;
+}
+
+.Slides {
+    display: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+
+  /* Video Slide Show above CSS */
+
+/* Video Section of the page code above */
+
+
+/* Store section of the page code below*/
+
+.store{
+   background: radial-gradient(
+       79.98% 79.98% at 50% 50%,
+        #F6C82A 0%, #F2C426 61.58%, 
+        #E9BB1F 100%);
+    padding-bottom: 35px;
+    padding-left:5%;
+}
+
+.store h1{
+    margin-left: 35px;
+}
+
+.store button{
+    float: right;
+    margin-right: 25px;
+}
+
+.store img{
+    width: 300px;
+    transition: 0.3s;
+    
+}
+
+.store img:hover {
+   border: 5px solid white;
+}
+
+.store_grid{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.item_caption{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.item_price{
+    font-family: cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+/* Store section of the page code above */
+
+
+
+/* Photo section of the page code below */
+
+.photos{
+ background: #000000;
+ padding-bottom: 35px;
+ 
+}
+
+.photos h1{
+    margin-left: 35px;
+    padding-left: 5%;
+}
+
+.photos button{
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.photo_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 2px;
+    padding: 5%;
+}
+
+
+
+/*Photo section of the page code above */
+
+
+/* Subscribe section of the page code below*/
+
+.subscribe{
+    background-image: url('Mask.png');
+    padding-bottom: 100px;
+    margin-top: -10px; /* Fix for white space issue*/
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+form input{
+    font-size: 18px;
+    
+}
+
+#email{
+    width: 45%;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid #F6C82A;
+    color: #F6C82A;
+    background-color: rgba(51, 170, 51, .0) ;
+}
+
+#country{
+    width: 45%;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid #F6C82A;
+    color: #F6C82A;
+    background-color: rgba(51, 170, 51, .0) ;
+}
+
+.email_options{
+    margin-top: 25px;
+    color: #F6C82A;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.submit p{
+    color: white;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+
+
+/* Subscribe section of the page code above*/
+
+footer{
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #F6C82A;
+   background-color: black;
+   text-align: center;
+}
+
+footer p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+
+
+/* Style on the buttons below */
+.buttonv1{
+    border-radius: 21px;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 5px 35px 5px 35px;
+    color: #F6C82A;
+    background-color: black;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.buttonv2{
+    border-radius: 21px;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 5px 35px 5px 35px;
+    color: black;
+    background-color: #F6C82A;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.buttonv1:hover{
+    border:3px solid white;
+}
+ .buttonv2:hover{
+    border:3px solid white;
+}
+
+/* Style on the buttons above */
