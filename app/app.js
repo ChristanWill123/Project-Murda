@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("Slides");
+  var slides = document.getElementsByClassName("slides");
   
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
@@ -49,6 +49,25 @@ function validator(){
   } else{
     alert("Thank You for submitting!");
     return true;
+  }
+
+}
+
+//Function for sticky navbar 
+
+window.onscroll = function(){
+  myFunction()
+};
+
+var navbar = document.getElementById("true_header");
+
+var sticky = navbar.offsetTop;
+
+function myFunction(){
+  if (window.pageYOffset >= sticky){
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
   }
 
 }
