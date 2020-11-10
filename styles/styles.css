@@ -1,10 +1,14 @@
-
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
 
 h1{
     color: rgba(51, 170, 51, .0) ;
     -webkit-text-stroke: 1px white; 
-    font-family: sans-serif;
-    font-size: 48px;
+    font-family: 'Sen', sans-serif;
+    font-size: 54px;
 }
 
 .main-grid{
@@ -33,6 +37,37 @@ a:hover{
    padding-bottom: 150px;
 }
 
+#true_header img{
+    
+}
+#true_header{
+
+}
+
+/* CSS for the sticky navbar below*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #F6C82A;
+    z-index: 1;
+    margin-left:-35px;
+}
+
+.sticky a{
+    margin-right: 100px;
+}
+
+.sticky img{
+    width: 100px;
+    margin-left: 15px;
+    
+}
+
+/* CSS for the sticky navbar above*/
+
+
 ul li{
     list-style-type: none;
 }
@@ -44,7 +79,7 @@ ul li{
 
 #nav-bar li{
   padding :10px;
-  font-family: sans-serif;
+  font-family: 'Sen', sans-serif;
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
@@ -61,35 +96,42 @@ ul li{
 }
 
 #social-bar img{
+    margin-bottom: 20px;
     transition: 0.3s;
 }
 
 #social-bar img:hover{
-    border: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 #header-content{
+  position: relative;
+  bottom: -100px;
   margin-top: -13%;
   margin-left: 35px;
 }
 
+
+
 #minor_title{
-  font-family: cursive;
+  font-family: 'Sedgwick Ave', cursive;
   font-style: normal;
   font-weight: normal;
   font-size:20px;
   line-height: 80px;
   letter-spacing: 3.3333px;
   text-transform: uppercase;
+  margin-bottom: -60px;
 }
 
 #major_title{
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 57px;
     line-height: 50px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 /* Top Section of the page code above */
@@ -97,7 +139,11 @@ ul li{
 /* Releases section of the page code below */
 
 .releases{
- background-image: url('Mask.png');
+ background-image:url('Mask.png') , url("grey.jpg") ;
+ background-position: right , left ;
+ background-size: 40%, 60%;
+ background-repeat: no-repeat,
+ repeat;
  padding-bottom: 30px;
  padding-left:5%;
  margin-top: -10px; /* Fix for white space issue*/
@@ -105,21 +151,26 @@ ul li{
 
 .releases h1{
     margin-left: 35px;
+    letter-spacing: 14px;
+    margin-bottom: -50px;
 }
 
-.releases button{
-    margin-top: 25px;
-    grid-area: butto;
-    margin-right: 15px;
-}
+
 
 .releases_grid{
     display: grid;
     grid-template-areas: 'image1 image1 image2 image3'
                          'image1 image1 image4 image5'
-                         'image6 image6 image6 butto';
+                         'image6 image6 butto butto';
     padding: 5%;
 }
+
+.releases button{
+    margin-right: 75px;
+    float: right;
+    
+}
+
 
 .releases_grid img {
     margin: 5px;
@@ -145,13 +196,19 @@ ul li{
     grid-area: image5;
 }
 
+.releases_grid img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
 
 /* Releases section of the page code above */
 
 /* Tour Section of the page code below */
 
 .tour {
-    background-color: black;
     color: white;
     padding-bottom: 35px;
     padding-left:5%;
@@ -160,37 +217,41 @@ ul li{
 
 .tour h1{
     margin-left: 35px;
+    letter-spacing: 14px;
 }
 
-.tour button{
+.tour a{
     float: right;
     margin-right: 25px;
 }
 
-.tour a{
+.tour_date a{
     color: yellow;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .tour_date{
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   font-family: sans-serif;
+   font-family: 'Sen', sans-serif;
    font-style: normal;
    font-weight: 800;
-   font-size: 18px;
+   font-size: 24px;
    line-height: 28px;
    text-transform: uppercase;
-  
-   
+   margin-bottom: 20px;
+   margin: 25px;
 }
 
 .tour_date h4{
-    font-family: cursive;
+    font-family: 'Sedgwick Ave', cursive;
     font-style: normal;
     font-weight: normal;
+    font-size: 20px;
     text-transform: uppercase;
+    margin-bottom: -15px;
 }
 
 .tour_location{
@@ -220,15 +281,16 @@ ul li{
 
 .videos h1{
     margin-left: 35px;
+    letter-spacing: 14px;
+    margin-bottom: -5px;
 }
 
-.videos button{
-    float: right;
-    margin-right: 25px;
-}
+
+
+
 
 .song_name{
-  font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -237,7 +299,7 @@ ul li{
 }
 
 .song_artist{
-    font-family: cursive;
+    font-family: 'Sedgwick Ave', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -250,16 +312,25 @@ audio::-webkit-media-controls-panel{
     background-color: #F6C82A;
 }
 
+audio:hover{
+    border-bottom: 3px solid white;
+}
+
 /* Video Slide Show below CSS */
 
 .videoslide-container{
     display: grid;
     max-width:1000px;
     margin:auto;
+    margin-top: 5px;
 }
 
-.Slides {
+.slides {
     display: none;
+}
+
+.slides img{
+    width: 60%;
 }
 
 .next {
@@ -287,11 +358,14 @@ audio::-webkit-media-controls-panel{
 
 .store h1{
     margin-left: 35px;
+    letter-spacing: 14px;
+    -webkit-text-stroke: 1px black; 
+    margin-bottom: 5px;
 }
 
-.store button{
+.store a{
     float: right;
-    margin-right: 25px;
+    margin-right: 10%;
 }
 
 .store img{
@@ -301,7 +375,7 @@ audio::-webkit-media-controls-panel{
 }
 
 .store img:hover {
-   border: 5px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .store_grid{
@@ -311,7 +385,7 @@ audio::-webkit-media-controls-panel{
 }
 
 .item_caption{
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 26px;
@@ -320,7 +394,7 @@ audio::-webkit-media-controls-panel{
 }
 
 .item_price{
-    font-family: cursive;
+    font-family: 'Sedgwick Ave', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -335,7 +409,6 @@ audio::-webkit-media-controls-panel{
 /* Photo section of the page code below */
 
 .photos{
- background: #000000;
  padding-bottom: 35px;
  
 }
@@ -343,11 +416,11 @@ audio::-webkit-media-controls-panel{
 .photos h1{
     margin-left: 35px;
     padding-left: 5%;
+    letter-spacing: 14px;
+    margin-bottom: -55px;
 }
 
-.photos button{
-    float: right;
-    margin-right: 25px;
+.photos a{   
     margin-top: 15px;
 }
 
@@ -371,10 +444,15 @@ audio::-webkit-media-controls-panel{
     margin-top: -10px; /* Fix for white space issue*/
 }
 
+.subscribe h1{
+    letter-spacing: 14px;
+    
+}
+
 form{
     margin: auto;
     width: 50%;
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: normal;
@@ -386,8 +464,9 @@ form input{
 }
 
 #email{
-    width: 45%;
-    height: 25px;
+    width: 35%;
+    margin-right: 20px;
+    font-size: 24px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -396,9 +475,13 @@ form input{
     background-color: rgba(51, 170, 51, .0) ;
 }
 
+#email::placeholder{
+    color: #F6C82A;
+}
+
 #country{
-    width: 45%;
-    height: 25px;
+    width: 35%;
+    font-size: 24px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -419,12 +502,19 @@ form input{
 
 .submit p{
     color: white;
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+}
+
+.submit input{
+    padding-right: 55px;
+    padding-left: 55px;
+    float: none;
+    margin-right: 0%;
 }
 
 
@@ -442,12 +532,17 @@ footer{
 }
 
 footer p{
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+}
+
+footer a{
+    color: #F6C82A;
+    margin: 15px;
 }
 
 
@@ -456,30 +551,36 @@ footer p{
 .buttonv1{
     border-radius: 21px;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     padding: 5px 35px 5px 35px;
     color: #F6C82A;
     background-color: black;
-    font-weight: 900;
+    font-weight: 700;
     transition: 0.3s;
 }
 
 .buttonv2{
     border-radius: 21px;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Sen', sans-serif;
     padding: 5px 35px 5px 35px;
     color: black;
     background-color: #F6C82A;
-    font-weight: 900;
+    font-weight: 700;
     transition: 0.3s;
+    float: right;
+    margin-right: 10%;
 }
 
 .buttonv1:hover{
-    border:3px solid white;
+    font-size: 20px;
+    font-weight: 900;
+    color: #F6C82A;
 }
  .buttonv2:hover{
-    border:3px solid white;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
 }
 
 /* Style on the buttons above */
