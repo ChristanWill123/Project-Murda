@@ -308,12 +308,18 @@ ul li{
 
 }
 
+audio{
+ transition: 0.3s;
+}
+
 audio::-webkit-media-controls-panel{
     background-color: #F6C82A;
 }
 
 audio:hover{
-    border-bottom: 3px solid white;
+    border: 2px solid white;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Video Slide Show below CSS */
